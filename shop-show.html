@@ -10,7 +10,7 @@
 </head>
 <body>
 	<!-- ヘッダー -->
-	<<header class='sticky-top'>
+	<header class='sticky-top'>
 		<div class="container">
 			<dir class="row">
 				<div class='col-3 pt-4'>
@@ -31,10 +31,10 @@
 		<div class="container my-5">
 			<!-- user情報 -->
 			<div class="row">
-				<div class="col-4">
+				<div class="col-11 col-md-4 mb-4 user-info-img">
 					<a class="zoomIn" href="shop-show.html"><img class="img-fluid rounded-circle" id="circle" src="img/3.jpg"></a>
 				</div>
-				<div class="col-8">
+				<div class="col-12 col-md-4 user-info-text">
 					<h3><a class="mb-1 text-dark" href="shop-show.html">syou</a></h3>
 					<h6 class="mb-1 text-dark">〒960-1101<br>福島県福島市.............</h6>
 					<h6 class="mb-1 text-dark">tell <a class="text-dark" href="#">024-000-0000</a></h6>
@@ -55,23 +55,46 @@
 		<div class="container-fluid">
 			<div class="card">
 				<nav class="bg-dark rounded-top mb-4">
-					<div class="nav nav-tabs border-bottom-0  justify-content-center" id="tab-menus" role="tablist">
+					<div class="nav nav-tabs border-bottom-0" id="tab-menus" role="tablist">
 						<a class="nav-item nav-link active text-black-50" id="tab-corde" data-toggle="tab" href="#panel-corde" role="tab" aria-controls="panel-corde" aria-selected="true">コーデ</a>
-						<a class="nav-item nav-link  text-black-50" id="tab-user" data-toggle="tab" href="#panel-user" role="tab" aria-controls="panel-user" aria-selected="false">スタッフ</a>
-						<a class="nav-item nav-link  text-black-50" id="tab-follower" data-toggle="tab" href="#panel-follower" role="tab" aria-controls="panel-follower" aria-selected="false">FOLLOWER</a>
-						<a class="nav-item nav-link  text-black-50" id="tab-follower" data-toggle="tab" href="#panel-follower" role="tab" aria-controls="panel-follower" aria-selected="false">オフショット</a>
+						<a class="nav-item nav-link  text-black-50" id="tab-sutaf" data-toggle="tab" href="#panel-sutaf" role="tab" aria-controls="panel-sutaf" aria-selected="false">スタッフ</a>
+						<a class="nav-item nav-link  text-black-50" id="tab-follow" data-toggle="tab" href="#panel-follow" role="tab" aria-controls="panel-follow" aria-selected="false">FOLLOWER</a>
+						<a class="nav-item nav-link  text-black-50" id="tab-off-shot" data-toggle="tab" href="#panel-Off-shot" role="tab" aria-controls="panel-Off-shot" aria-selected="false">オフショット</a>
 					</div>
 				</nav>
 
 
 
 				<div class="tab-content" id="panel-menus">
+					<!-- コーデ -->
 					<div class="tab-pane fade show active" id="panel-corde" role="tabpanel" aria-labelledby="tab-corde">
 						<div class="card-body row">
-							<div class="col-12 border-bottom pb-2 text-center">
-								<button type='button' class='btn btn-success'><i class="far fa-handshake icon-btns"></i> 新規投稿</button>
+							<div class="col-12 border-bottom pb-4 mb-1 text-center">
+								<button type='button' class='btn btn-success'><i class="fas fa-pen-nib"></i> 新規投稿</button>
 							</div>
-							<div class='col-4 m-1'>
+							<div class='col-6 col-md-4 my-1'>
+								<!-- カード01 -->
+								<div class='card mb-3'>
+									<a class="zoomIn" href="posts-show.html"><img src="img/1.jpg" alt='' class='img-fluid p-2'></a>
+									<!-- カードエリアの本文 -->
+									<div class='card-body text-center'>
+										<button type='button' class='btn btn-white-50'><i class="fas fa-thumbs-up icon-btns"></i> 100</button>
+										<button type='button' class='btn btn-white-50'><i class="fas fa-eye icon-btns"></i> 10000</button>
+									</div>
+								</div>
+							</div>
+							<div class='col-6 col-md-4 my-1'>
+								<!-- カード01 -->
+								<div class='card mb-3'>
+									<a class="zoomIn" href="posts-show.html"><img src="img/1.jpg" alt='' class='img-fluid p-2'></a>
+									<!-- カードエリアの本文 -->
+									<div class='card-body text-center'>
+										<button type='button' class='btn btn-white-50'><i class="fas fa-thumbs-up icon-btns"></i> 100</button>
+										<button type='button' class='btn btn-white-50'><i class="fas fa-eye icon-btns"></i> 10000</button>
+									</div>
+								</div>
+							</div>	
+							<div class='col-6 col-md-4 my-1'>
 								<!-- カード01 -->
 								<div class='card mb-3'>
 									<a class="zoomIn" href="posts-show.html"><img src="img/1.jpg" alt='' class='img-fluid p-2'></a>
@@ -84,7 +107,84 @@
 							</div>	
 						</div>
 					</div>
+					<!-- スタッフ -->
+					<div class="tab-pane fade" id="panel-sutaf" role="tabpanel" aria-labelledby="tab-sutaf">
+						<div class="card-body row">
+							<div class="col-12 col-md-6 mb-1">
+								<div class="card">
+									<dir class="card-body row">
+										<div class="col-4">
+											<a href="user-show.html"><img class="img-fluid rounded-circle" id="circle" src="img/4.jpg"></a>
+										</div>
+										<div class="col-8">
+											<h3><a class="mb-1 text-dark" href="shop-show.html">syouji</a></h3>
+											<h6 class="mb-1 text-dark">170cm / Men</h6>
+										</div>
+									</dir>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 mb-1">
+								<div class="card">
+									<dir class="card-body row">
+										<div class="col-4">
+											<a href="user-show.html"><img class="img-fluid rounded-circle" id="circle" src="img/4.jpg"></a>
+										</div>
+										<div class="col-8">
+											<h3><a class="mb-1 text-dark" href="shop-show.html">syouji</a></h3>
+											<h6 class="mb-1 text-dark">170cm / Men</h6>
+										</div>
+									</dir>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- フォロー -->
+					<div class="tab-pane fade" id="panel-follow" role="tabpanel" aria-labelledby="tab-follow">
+						<div class="card-body row">
+							<div class="col-12 col-md-6 mb-1">
+								<div class="card">
+									<dir class="card-body row">
+										<div class="col-4">
+											<a href="user-show.html"><img class="img-fluid rounded-circle" id="circle" src="img/4.jpg"></a>
+										</div>
+										<div class="col-8">
+											<h3><a class="mb-1 text-dark" href="shop-show.html">syouji</a></h3>
+											<h6 class="mb-1 text-dark">170cm / Men</h6>
+										</div>
+									</dir>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 mb-1">
+								<div class="card">
+									<dir class="card-body row">
+										<div class="col-4">
+											<a href="user-show.html"><img class="img-fluid rounded-circle" id="circle" src="img/4.jpg"></a>
+										</div>
+										<div class="col-8">
+											<h3><a class="mb-1 text-dark" href="shop-show.html">syouji</a></h3>
+											<h6 class="mb-1 text-dark">170cm / Men</h6>
+										</div>
+									</dir>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- オフショット -->
+					<div class="tab-pane fade" id="panel-Off-shot" role="tabpanel" aria-labelledby="tab-Off-shot">
+						<div class="row">
+
+
+
+						</div>
+					</div>
+
 				</div>
+
+
+
+
+
+
 			</div>
 		</div>
 	
