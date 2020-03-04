@@ -2,6 +2,101 @@
 /* ページ内リンクの位置調整 */
 
 
+/*header*/
+header{
+    height: 80px;
+    box-shadow: 0px 10px 15px -10px;
+    background-color: rgba(255,255,255,0.8);
+
+}
 .logo-size {
-	height: 80px;
+	height: 70px;
+}
+
+/*nav*/
+.nav {
+
+}
+
+
+/*ズームイン*/
+.zoomIn img {
+    border-radius: 20px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+.zoomIn:hover img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*ソート　アコーディオン*/
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#accordion_menu > li {
+    border-bottom: black 2px solid;
+    /*border-radius: 20px;*/
+    margin-bottom: 5px;
+}
+#accordion_menu a{
+    color: #666;
+}
+#accordion_menu a[data-toggle="collapse"]{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+  	position: relative;
+}
+#accordion_menu a[data-toggle="collapse"]:hover{
+    background: #e7e7e7;
+    border-radius: 30px;
+}
+#accordion_menu a[data-toggle="collapse"]::after{
+    content:"";
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: #666 1px solid;
+    border-right: #666 1px solid;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+#accordion_menu a[aria-expanded=false]::after{
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition-duration: 0.3s;
+}
+#accordion_menu a[aria-expanded=true]::after{
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg);
+    transition-duration: 0.3s;
+}
+[id^="menu"] li{
+    padding: 10px 10px 10px 20px;
+}
+
+/*icon-botton*/
+.icon-btns {
+	font-size: 20px;
+}
+
+
+/*serach*/
+.search-img {
+    margin: 2px -13px 2px;
+}
+
+/*posts-show*/
+.user-img {
+    height: 100px;
 }
