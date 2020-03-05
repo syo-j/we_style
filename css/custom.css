@@ -14,10 +14,14 @@
     .user-info-text{
         text-align: center;
     }
+    /*shop-show*/
+    .shop-show-tab .nav-item{
+        font-size: 70%;
+    }
 }
 @media screen and (max-width: 480px) {
     header div a {
-        font-size: 50%;
+        font-size: 70%;
         font-weight: bold;
     }
 }
@@ -30,11 +34,6 @@ header{
 
 .logo-size {
 	height: 70px;
-}
-
-/*nav*/
-.nav {
-
 }
 
 
@@ -106,7 +105,7 @@ ul,li{
 
 /*icon-botton*/
 .icon-btns {
-	font-size: 20px;
+	font-size: 15px;
 }
 
 
@@ -119,5 +118,26 @@ ul,li{
 .user-img {
     height: 100px;
 }
-
+/*posts-new*/
+.img_field {
+  font-size: 15px;
+  margin-top: 10px;
+  margin:0 auto;
+  padding: 5px 8px;
+  border: dotted 3px #EDBC6C;
+  color: #666;
+  position: relative;
+  padding: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 273px;
+  height: 365px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #eeeeee;
+  overflow: hidden;
+  box-sizing: border-box;
+  transition: 0.3s ease-out;
+}
 

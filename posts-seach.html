@@ -11,90 +11,143 @@
 <body>
 	<!-- ヘッダー -->
 	<header class='sticky-top'>
-		<div class="container">
+		<div class="container-fluid">
 			<dir class="row">
-				<div class='col-3 pt-4'>
-					<h4><a href="posts-seach.html" class="fas fa-search text-dark"> click</a></h4>
+				<div class='col-3 text-center pt-4'>
+					<h4><a class=" text-dark" href="posts-seach.html"><i class="fas fa-search"></i> click</a></h4>
 				</div>
-				<div class='col-6 text-center'>
+				<div class='col-5 text-center'>
 					<a href="index.html"><img class='img-fluid mt-2 logo-size' src="img/logo.png" alt='we style'></a>
 				</div>
-				<div class="col-3 row pt-4">
-					<h6 class="col-12 col-md-6 pb-2"><a class="text-dark" href="#">新規登録</a></h6>
-					<h6 class="col-12 col-md-6"><a class="text-dark" href="#">ログイン</a></h6>
+				<div class="col-4 row pt-4 text-center d-none d-sm-inline">
+
+					<h6 class="col-12 pb-1 col-md-6"><a class="text-dark" href="user-new.html">新規投稿</a></h6>
+
+					<h6 class="col-12 col-md-6"><a data-toggle="modal" data-target="#login-Modal" class="text-dark" href="#">ログイン</a></h6>
+				</div>
+				<div class="col-3 text-center d-sm-none pt-4">
+					<h4><a data-toggle="modal" data-target="#menuModal" href="#"><i class="fas fa-bars aria-expanded text-dark"></i></a></h4>
 				</div>
 			</div>
 		</div>
 	</header>
-	<!--　ヘッダー -->
+	<!-- メイン -->
 	<main>
-	<nav class="my-5">
-		<form class="form-inline justify-content-center">
-	      	<input type="search" class="form-control mr-2 w-50" placeholder="好きなワードを..." aria-label="好きなワードを...">
-	      	<button type="submit" class="btn btn-outline-success my-2 my-sm-0">検索</button>
-    	</form>
-	</nav>
-
-	<div class="container-fluid">
-		<div class="row justify-content-center">
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-5 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			<div class="col-4 col-md-2 search-img">
-				<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
-			</div>
-			
+		<!-- ログイン画面 -->
+		<div class="modal fade" id="login-Modal" tabindex="-1" role="dialog" aria-labelledby="login-ModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content"> 
+					<div class="modal-header">
+						<h1 class="modal-title" id="login-ModalLabel">Login</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  			<span aria-hide="true">✖︎</span>
+				  		</button>
+					</div>
+					<form class="mb-3 w-75 m-auto">
+				  		<div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="form-group">
+                              <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                           </div>
+				  	</form>
+				  	<div class="modal-footer">
+				  		<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+				  	</div>
+				</div>
+		 	</div>
 		</div>
-	</div>
 
+
+		<!-- menumodal -->
+		<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content pb-5"> 
+					<div class="modal-header">
+						<h1 class="modal-title" id="menuModalLabel">Menu</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  			<span aria-hide="true">✖︎</span>
+				  		</button>
+					</div>
+					<div class="mb-3 m-auto">
+				  		<h5 class="py-5"><a class="text-dark" href="user-new.html"><i class="fas fa-address-card"></i> 新規会員登録</a></h5>
+				  		<h5 class="pb-5"><a data-toggle="modal" data-target="#login-Modal" data-dismiss="modal" class="text-dark" href="#"><i class="fas fa-user"></i> ログイン</a></h5>
+				  	</div>
+				</div>
+		 	</div>
+		</div>
+		<!-- コンテンツ -->
+		<nav class="my-5">
+			<form class="form-inline justify-content-center">
+		      	<input type="search" class="form-control mr-2 w-50" placeholder="好きなワードを..." aria-label="好きなワードを...">
+		      	<button type="submit" class="btn btn-outline-success my-2 my-sm-0">検索</button>
+	    	</form>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/1.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/5.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/7.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/1.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/7.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/5.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/1.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/7.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/5.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/1.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-5 col-md-2 search-img">
+					<a href="#"><img src="img/7.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/1.jpg" alt='' class='img-fluid'></a>
+				</div>
+				<div class="col-4 col-md-2 search-img">
+					<a href="#"><img src="img/2.jpg" alt='' class='img-fluid'></a>
+				</div>
+				
+			</div>
+		</div>
 	</main>
 	<!-- フッター -->
 	<footer class='py-4 navbar-dark bg-dark text-white'>

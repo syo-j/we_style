@@ -9,26 +9,202 @@
 	<title>WE STYLE</title>
 </head>
 <body>
-	<!-- ヘッダー -->
 	<header class='sticky-top'>
-		<div class="container">
+		<div class="container-fluid">
 			<dir class="row">
-				<div class='col-3 pt-4'>
-					<h4><a href="posts-seach.html" class="fas fa-search text-dark"> click</a></h4>
+				<div class='col-3 text-center pt-4'>
+					<h4><a class=" text-dark" href="posts-seach.html"><i class="fas fa-search"></i> click</a></h4>
 				</div>
-				<div class='col-6 text-center'>
+				<div class='col-5 text-center'>
 					<a href="index.html"><img class='img-fluid mt-2 logo-size' src="img/logo.png" alt='we style'></a>
 				</div>
-				<div class="col-3 row py-2">
-					<h6 class="col-12 col-md-6 pb-2"><a class="text-dark" href="#">新規登録</a></h6>
-					<h6 class="col-12 col-md-6"><a class="text-dark" href="#">ログイン</a></h6>
+				<div class="col-4 row pt-4 text-center d-none d-sm-inline">
+
+					<h6 class="col-12 pb-1 col-md-6"><a class="text-dark" href="user-new.html">新規投稿</a></h6>
+
+					<h6 class="col-12 col-md-6"><a data-toggle="modal" data-target="#login-Modal" class="text-dark" href="#">ログイン</a></h6>
+				</div>
+				<div class="col-3 text-center d-sm-none pt-4">
+					<h4><a data-toggle="modal" data-target="#menuModal" href="#"><i class="fas fa-bars aria-expanded text-dark"></i></a></h4>
 				</div>
 			</div>
 		</div>
 	</header>
-	<!--　ヘッダー -->
+	<!-- メイン -->
 	<main>
-		
+		<!-- ログイン画面 -->
+		<div class="modal fade" id="login-Modal" tabindex="-1" role="dialog" aria-labelledby="login-ModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content"> 
+					<div class="modal-header">
+						<h1 class="modal-title" id="login-ModalLabel">Login</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  			<span aria-hide="true">✖︎</span>
+				  		</button>
+					</div>
+					<form class="mb-3 w-75 m-auto">
+				  		<div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" name="email"  class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                           </div>
+                           <div class="form-group">
+                              <label for="exampleInputEmail1">Password</label>
+                              <input type="password" name="password" id="password"  class="form-control" aria-describedby="emailHelp" placeholder="Enter Password">
+                           </div>
+                           <div class="form-group">
+                              <p class="text-center">By signing up you accept our <a href="#">Terms Of Use</a></p>
+                           </div>
+				  	</form>
+				  	<div class="modal-footer">
+				  		<button type="submit" class=" btn btn-block mybtn btn-primary tx-tfm">Login</button>
+				  	</div>
+				</div>
+		 	</div>
+		</div>
+
+
+		<!-- menumodal -->
+		<div class="modal fade" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="menuModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content pb-5"> 
+					<div class="modal-header">
+						<h1 class="modal-title" id="menuModalLabel">Menu</h1>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				  			<span aria-hide="true">✖︎</span>
+				  		</button>
+					</div>
+					<div class="mb-3 m-auto">
+				  		<h5 class="py-5"><a class="text-dark" href="user-new.html"><i class="fas fa-address-card"></i> 新規会員登録</a></h5>
+				  		<h5 class="pb-5"><a data-toggle="modal" data-target="#login-Modal" data-dismiss="modal" class="text-dark" href="#"><i class="fas fa-user"></i> ログイン</a></h5>
+				  	</div>
+				</div>
+		 	</div>
+		</div>
+
+		<!-- コンテンツ -->
+		<div class="container mt-5">
+			<form>
+				<div class="row mb-5">
+					<div class="col-12 col-md-3 mb-3">
+						<h5>コーディネート画像<span class='badge badge-warning'>必須</span></h5>
+					</div>
+					<div class="col-7 mb-3">
+						<div class="card img_field"></div>
+					</div>
+					<div class="col-6 col-md-2 align-self-center text-center">
+						<button><i class="fas fa-camera"></i> アップロード</button>
+					</div>
+				</div>
+				<div class="mb-4">	
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>着用モデル</h5>
+						</div>
+						<div class="col-9 row">
+							<label for='category' class='col-md-6 col-form-label'>
+									身長<span class='badge badge-warning'>必須</span>
+							</label>
+							<div class='col-md-6 mb-3'>
+								<select class='form-control' id='category' name='category'>
+									<option value='category1'>160</option>
+									<option value="category2">165</option>
+									<option value="category3">170</option>
+								</select>
+							</div>						
+							<label for='category' class='col-md-6 col-form-label'>
+								性別<span class='badge badge-warning'>必須</span>
+							</label>
+							<div class='col-md-6 mb-3'>
+								<select class='form-control' id='category' name='category'>
+									<option value='category1'>Men</option>
+									<option value="category2">Women</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>着用アイテム</h5>
+						</div>
+						<div class="col-9 row">
+							<a class="col-md-6 mb-3"><button>追加 <i class="fas fa-plus"></i></button></a>
+							<div class="col-md-6 row">
+								<p class="col-12"><button type='button' class='btn btn-white-50'>Jacket</button>......./......./s/¥2000  <a href="#"><i class="fas fa-minus-square"></i></a></p>
+								<p class="col-12"><button type='button' class='btn btn-white-50'>Shirt</button>......./......./s/¥2000  <a href="#"><i class="fas fa-minus-square"></i></a></p>
+								<p class="col-12"><button type='button' class='btn btn-white-50'>Pants</button>......./......./s/¥2000  <a href="#"><i class="fas fa-minus-square"></i></a></p>
+							</div>
+						</div>
+					</div>
+
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>検索ヒット用</h5>
+						</div>
+						<div class="col-9 row">
+							<label for='category' class='col-md-6 col-form-label'>
+									コーディネート総合色<span class='badge badge-warning'>必須</span>
+							</label>
+							<div class='col-md-6 mb-3'>
+								<select class='form-control' id='category' name='category'>
+									<option value='category1'>レッド系</option>
+									<option value="category2">ブルー系</option>
+									<option value="category3">グリーン系</option>
+									<option value="category3">イエロー系</option>
+									<option value="category3">ブラック系</option>
+									<option value="category3">ホワイト系</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>コーディネートタイトル</h5>
+						</div>
+						
+						<div class='col-md-9'>
+							<input type="text" class="form-control" id='corde-title' required>
+						</div>	
+					</div>
+
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>コーディネートコメント</h5>
+						</div>
+						
+						<div class='col-md-9'>
+							<textarea class='form-control' id='corde-text' rows='8' name='message'></textarea>
+						</div>	
+					</div>
+
+					<div class='form-group row'>
+						<div class="col-12 col-md-3 mb-3">
+							<h5>公開設定</h5>
+						</div>
+						<div class="col-9 row">
+							<label for='category' class='col-md-6 col-form-label'>
+									公開 or 非公開 ?<span class='badge badge-warning'>必須</span>
+							</label>
+							<div class='col-md-6 mb-3'>
+								<select class='form-control' id='category' name='category'>
+									<option value='category1'>公開</option>
+									<option value="category2">非公開</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class='form-group row justify-content-end'>
+						<div class='col-md-9'>
+							<button type='submit' class='btn btn-primary'>投稿</button>
+						</div>
+					</div>
+
+				</div>
+			</form>
+		</div>
 
 	
 
@@ -46,32 +222,6 @@
 				<!-- /ナビゲーション1 -->
 				<!-- ナビゲーション2 -->
 				<ul class='navbar-nav text-center col-4'>
-
-					<li class='nav-item'>
-						<a class='nav-link' href="#"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="#news"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="#about"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="#menu"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="#coupon"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="#shop"></a>
-					</li>
-					<li class='nav-item'>
-						<a class='nav-link' href="contact.html"></a>
-					</li>
-				</ul>
-				<!-- /ナビゲーション2-->
-				<!-- ナビゲーション3 -->
-				<ul class='navbar-nav text-center col-4'>
 					<li class='nav-item'>
 						<a class='nav-link' href="
 						about.html">初めての方へ</a>
@@ -80,7 +230,7 @@
 						<a class='nav-link' href="contact.html">お問い合わせ</a>
 					</li>
 				</ul>
-				<!-- /ナビゲーション3 -->	
+				<!-- /ナビゲーション2 -->	
 			</div>
 			
 		</div>
