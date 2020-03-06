@@ -25,9 +25,17 @@
         font-weight: bold;
     }
 }
+
+body {
+  background-color: #EEEEEE;
+}
+.body-1 {
+  background-color: #e8f044;
+}
 /*header*/
 header{
     height: 90px;
+    margin-top: -16px;
     box-shadow: 0px 10px 15px -10px;
     background-color: rgba(255,255,255,0.8);
 }
@@ -35,11 +43,37 @@ header{
 .logo-size {
 	height: 70px;
 }
+/* footer */
+footer {
+  background-color: #ffcc00;
+  border-radius: 120px 120px 0 0;
+}
+
+/*posts-index*/
+.posts-nav-bg {
+  background-color: #009900;
+  border-radius: 10px 10px 0 0;
+}
+.posts-bg {
+  background-color: #EEEEEE;
+}
+.posts-category-bg {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/*user-show*/
+.show-card-bg {
+  background-color: #EEEEEE;
+}
+.shop-show-tab .nav-item {
+  font-weight: bold;
+}
 
 
 /*ズームイン*/
 .zoomIn img {
-    border-radius: 20px;
+    border-radius: 10px;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: 0.5s ease-in-out;
