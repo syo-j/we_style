@@ -36,6 +36,7 @@ body {
 header{
     height: 90px;
     margin-top: -16px;
+    margin-bottom: 50px;
     box-shadow: 0px 10px 15px -10px;
     background-color: rgba(255,255,255,0.8);
 }
@@ -174,4 +175,51 @@ ul,li{
   box-sizing: border-box;
   transition: 0.3s ease-out;
 }
+
+
+
+
+#list:hover {
+  background-color:;
+}
+
+.img-firu {
+  z-index: 1;
+  position: relative;
+
+}
+.firu {
+  z-index: 2;
+  height: 50%;
+  width: 100%;
+  background-color: rgba(255,255,255,0.8);
+  position: absolute;
+  top: 50px; 
+  
+
+}
+
+/* スクロール */
+.con.delighter {
+  transition: all .4s ease-out;
+  transform: none;
+  opacity: 1;
+  
+  visibility: visible;
+}
+  
+/* スタート時のスタイル */
+.con.delighter.started {
+  transform: none;
+  opacity: 0;
+  visibility: hidden;
+}
+  
+/* エンド時のスタイル */
+.con.delighter.started.ended {
+   opacity: 1;
+   visibility: visible;
+}
+
+
 
