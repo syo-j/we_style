@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang='ja'>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no'>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
@@ -10,9 +10,9 @@
 </head>
 <body>
 	<!-- ヘッダー -->
-	<header class='sticky-top d-none d-md-block'>
+	<header class='sticky-top mb-3 d-none d-md-block'>
 		<div class="container-fluid">
-			<dir class="row">
+			<div class="row">
 				<div class='col-3 text-center pt-4'>
 					<h4><a class=" text-dark" href="posts-seach.html"><i class="fas fa-search"></i> click</a></h4>
 				</div>
@@ -33,21 +33,12 @@
 	</header>
 	<div class='header-mobil d-md-none'>
 		<div class="container-fluid">
-			<dir class="row">
-				<div class='col-md-3 text-center pt-4 d-none d-md-inline'>
-					<h4><a class=" text-dark" href="posts-seach.html"><i class="fas fa-search"></i> click</a></h4>
-				</div>
-				<div class='col-8 col-md-5 text-md-center'>
-					<a href="index.html"><img class='img-fluid mt-2 logo-size' src="img/logo.png" alt='we style'></a>
-				</div>
-				<div class="col-1 col-md-4 row pt-4 text-center d-none d-md-inline">
-
-					<h6 class="col-12 pb-1 col-md-6"><a class="text-dark" href="user-new.html">新規投稿</a></h6>
-
-					<h6 class="col-12 col-md-6"><a data-toggle="modal" data-target="#login-Modal" class="text-dark" href="#">ログイン</a></h6>
-				</div>
-				<div class="col-3 text-center d-md-none pt-4">
+			<div class="row">
+				<div class="col-12 text-right pt-4">
 					<h4><a data-toggle="modal" data-target="#menuModal" href="#"><i class="fas fa-bars aria-expanded text-dark"></i></a></h4>
+				</div>
+				<div class='col-12 col-md-5 text-center'>
+					<a href="index.html"><img class='img-fluid mt-2 logo-size-mobil' src="img/logo.png" alt='we style'></a>
 				</div>
 			</div>
 		</div>
@@ -415,7 +406,7 @@
 	</main>
 	<!-- /メイン -->
 	<!-- フッター -->
-	<footer class='py-4 navbar-dark bg-dark'>
+	<footer class='py-2'>
 		<div class='container'>		
 			<div class="row justify-content-center py-2">
 				<!-- ナビゲーション1 -->
@@ -467,23 +458,21 @@
 		</div>
 			<p class="text-center"><small>Copyright &copy;2020 WE STYLE,All Rights Reserved.</small></p>
 	</footer>
-	<div class="fixed-bottom bg-white d-md-none">
+	<div class="footer-menu fixed-bottom d-md-none">
 		<div class="container-fluid">
-			<dir class="row">
-				<div class='col-3 text-center pt-4'>
-					<h4><a class=" text-dark" href="posts-seach.html"><i class="fas fa-search"></i> click</a></h4>
+			<div class="row text-center justify-content-center">
+				<div class="col-3">
+					<a href="index.html"><h3><i class="fas fa-home"></i></h3><p>home</p></a>	
 				</div>
-				<div class='col-5 text-center'>
-					<a href="index.html"><img class='img-fluid mt-2 logo-size' src="img/logo.png" alt='we style'></a>
+				<div class="col-3">
+					<a href="posts-seach.html"><h3><i class="fas fa-search"></i></h3><p>search</p></a>
 				</div>
-				<div class="col-4 row pt-4 text-center d-none d-sm-inline">
-
-					<h6 class="col-12 pb-1 col-md-6"><a class="text-dark" href="user-new.html">新規投稿</a></h6>
-
-					<h6 class="col-12 col-md-6"><a data-toggle="modal" data-target="#login-Modal" class="text-dark" href="#">ログイン</a></h6>
+				<div class="col-3">
+					<h4><a href="#"><i class="fas fa-user-edit"></i></a></h4>
+					<p></p>
 				</div>
-				<div class="col-3 text-center d-sm-none pt-4">
-					<h4><a data-toggle="modal" data-target="#menuModal" href="#"><i class="fas fa-bars aria-expanded text-dark"></i></a></h4>
+				<div class="col-3">
+					<h4><a href="#"><i class="fas fa-user-edit"></i></a></h4>
 				</div>
 			</div>
 		</div>
